@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html id="top">
+	<head>
+		<meta charset="utf-8" />
+		<title>Excel 97 Egg — About</title>
+
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+		/>
+		<meta
+			name="description"
+			content="A faithful reproduction of the magic carpet easter egg hidden in Excel 97."
+		/>
+		<meta
+			name="keywords"
+			content="excel, easter egg, egg, microsoft, flight simulator, flight, purple, magic carpet, flying carpet"
+		/>
+		<meta property="og:title" content="Excel 97 Egg — About" />
+		<meta
+			property="og:description"
+			content="A faithful reproduction of the magic carpet easter egg hidden in Excel 97."
+		/>
+		<meta
+			property="og:image"
+			content="https://rezmason.github.io/excel_97_egg/readme_assets/monolith_screenshot.png"
+		/>
+		<meta
+			property="og:url"
+			content="https://rezmason.github.io/excel_97_egg/index.html"
+		/>
+		<meta
+			name="twitter:card"
+			content="https://rezmason.github.io/excel_97_egg/readme_assets/monolith_screenshot.png"
+		/>
+		<meta property="og:site_name" content="Rezmason.net" />
+		<meta
+			name="twitter:image:alt"
+			content="A monolith with the inscription 'EXCEL 97' in front of a jagged purple twilit landscape"
+		/>
+
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+		<link rel="manifest" href="site.webmanifest" />
+		<link rel="preload" href="assets/ui/self_portrait_grin.bmp" as="image" />
+		<link rel="preload" href="assets/ui/self_portrait_bop_left.bmp" as="image" />
+		<link rel="preload" href="assets/ui/self_portrait_bop_right.bmp" as="image" />
+
+		<link rel="stylesheet" type="text/css" href="assets/98/relative.css" />
+		<link rel="stylesheet" type="text/css" href="assets/98/fixes.css" />
+		<link rel="stylesheet" type="text/css" href="assets/about.css" />
+	</head>
+	<body
+		class="standalone"
+		onload="
+			if (parent.document !== document) {
+				Array.from(document.querySelectorAll('.standalone')).forEach(el => el.classList.remove('standalone'));
+			}
+		"
+		onclick="
+			if (parent.document !== document && event.target === document.body) {
+				parent.document.querySelector('iframe#about-box').classList.add('hidden');
+			}
+		"
+	>
+		<div id="get-egg" class="standalone">
+			<a id="link-to-egg" href="index.html"
+				><img src="assets/ui/get_egg.bmp"
+			/></a>
+		</div>
+		<div class="window standalone">
+			<div class="title-bar">
+				<div class="title-bar-text">About This Web Site</div>
+			</div>
+			<div class="window-body">
+				<img id="about-banner" src="assets/ui/about_banner.png" />
+				<main>
+					<article id="content">
+						<h1 id="title">Excel&nbsp;97 Egg</h1>
+						<header>
+							<div id="author-info">
+								<div id="self-portrait"></div>
+								<div>
+									reproduced by Jeremy&nbsp;Sachs<br />
+									<strong>Rez&#8209;Mason Retrographic Services</strong><br />
+									Vallejo, California
+									<p>
+										<em>Visit us on the World Wide Web!</em><br />
+										<a target="_blank" href="https://www.rezmason.net/"
+											>https://www.rezmason.net/
+										</a>
+									</p>
+								</div>
+							</div>
+							<div>
+								This project is licensed under:
+								<fieldset id="license-box">
+									<p>Massachusetts Institute of Technology License</p>
+								</fieldset>
+							</div>
+						</header>
+						<hr />
+						<section id="introduction">
+							<h2>What's this?</h2>
+							<p>
+								You're looking at the magic carpet simulator hidden in
+								<a
+									target="_blank"
+									href="https://en.wikipedia.org/wiki/Microsoft_Excel#Excel_97_(v8.0)"
+									>Microsoft&nbsp;Excel&nbsp;97</a
+								>
+								by programmers on its charting team.
+							</p>
+							<p>
+								Hiding things in your work for people to find is known as an
+								<a target="_blank" href="https://eeggs.com/items/718.html"
+									>"easter&nbsp;egg"</a
+								>. To find Excel&nbsp;97's, you perform a secret series of
+								actions in an empty spreadsheet, and the Chart&nbsp;Wizard
+								transports you here. In front of you on a stone monument, it
+								lists the whole Excel team, which is a common easter&nbsp;egg
+								characteristic.
+							</p>
+						</section>
+						<section id="goal">
+							<h2>What's it doing on a web site?</h2>
+							<p>
+								This is a
+								<em>faithful&nbsp;reproduction</em> of that original
+								easter&nbsp;egg, meant to preserve a part of computer history.
+							</p>
+							<p>
+								The World Wide Web has very low barriers to entry, and web pages
+								like this one can be made to last a fairly long time.
+							</p>
+							<p>
+								This project is
+								<a
+									target="_blank"
+									href="https://github.com/Rezmason/excel_97_egg"
+									>fully open source</a
+								>
+								and
+								<a
+									target="_blank"
+									href="https://github.com/Rezmason/excel_97_egg/blob/main/LICENSE"
+								>
+									MIT licensed</a
+								>, and it's taught me many things.
+							</p>
+						</section>
+						<section id="legend">
+							<h2>It's so clunky. What do all those buttons do?</h2>
+							<p>
+								Computers were clunky in 1997. You can change it in the options:
+							</p>
+
+							<legend id="command-bar-legend">
+								<legend-entry>
+									<legend-icon
+										style="--icon: 6"
+										id="limit-draw-speed"
+									></legend-icon>
+									<legend-key><div>( S )</div></legend-key>
+									<legend-title
+										><div>Limit Draw <u>S</u>peed</div></legend-title
+									>
+									<legend-description
+										><div>
+											Caps the frame rate at approximately 15&nbsp;FPS.
+										</div></legend-description
+									>
+								</legend-entry>
+								<legend-entry>
+									<legend-icon
+										style="--icon: 5"
+										id="limit-draw-resolution"
+									></legend-icon>
+									<legend-key><div>( R )</div></legend-key>
+									<legend-title
+										><div>Limit Draw <u>R</u>esolution</div></legend-title
+									>
+									<legend-description
+										><div>
+											Forces the dimensions of the rendered scene to
+											640&nbsp;x&nbsp;480, also known as
+											<a
+												target="_blank"
+												href="https://en.wikipedia.org/wiki/Super_VGA#Specifications"
+												>SVGA graphics mode</a
+											>.
+										</div></legend-description
+									>
+								</legend-entry>
+								<legend-entry>
+									<legend-icon
+										style="--icon: 2"
+										id="lighting-cutoff"
+									></legend-icon>
+									<legend-key><div>( C )</div></legend-key>
+									<legend-title
+										><div>Lighting <u>C</u>utoff</div></legend-title
+									>
+									<legend-description
+										><div>
+											Changes the maximum distance of the fog and drawn terrain.
+										</div></legend-description
+									>
+								</legend-entry>
+								<legend-entry>
+									<legend-icon
+										style="--icon: 4"
+										id="true-color-textures"
+									></legend-icon>
+									<legend-key><div>( T )</div></legend-key>
+									<legend-title
+										><div>True&#8209;Color <u>T</u>extures</div></legend-title
+									>
+									<legend-description
+										><div>
+											Renders smoother textures in
+											<a
+												target="_blank"
+												href="https://en.wikipedia.org/wiki/Color_depth#True_color_(24-bit)"
+											>
+												millions of colors</a
+											>, rather than the original
+											<a
+												target="_blank"
+												href="https://en.wikipedia.org/wiki/Indexed_color"
+												>indexed&#8209;color</a
+											>
+											textures.
+										</div></legend-description
+									>
+								</legend-entry>
+								<legend-entry>
+									<legend-icon
+										style="--icon: 1"
+										id="birds-eye-view"
+									></legend-icon>
+									<legend-key><div>( B )</div></legend-key>
+									<legend-title
+										><div><u>B</u>ird's Eye View</div></legend-title
+									>
+									<legend-description
+										><div>
+											A third person perspective to help navigate <wbr />and
+											understand the terrain.
+										</div></legend-description
+									>
+								</legend-entry>
+								<legend-entry>
+									<legend-icon
+										style="--icon: 3"
+										id="show-quad-edges"
+									></legend-icon>
+									<legend-key><div>( Q )</div></legend-key>
+									<legend-title
+										><div>Show <u>Q</u>uad Edges</div></legend-title
+									>
+									<legend-description
+										><div>
+											Highlights the boundaries of the tiled terrain geometry.
+										</div></legend-description
+									>
+								</legend-entry>
+								<legend-entry>
+									<legend-icon
+										style="--icon: 7"
+										id="show-sindogs"
+									></legend-icon>
+									<legend-key><div>( G )</div></legend-key>
+									<legend-title><div>Show Sindo<u>g</u>s</div></legend-title>
+									<legend-description
+										><div>
+											Gives the horizon texture a sinusoidal glow. <wbr />(Named
+											after a sneaky
+											<a
+												target="_blank"
+												href="https://www.youtube.com/watch?v=0XllTdSi5hY&t=2720s"
+												>Windows bug</a
+											>)
+										</div></legend-description
+									>
+								</legend-entry>
+								<legend-entry>
+									<legend-icon style="--icon: 9" id="music"></legend-icon>
+									<legend-key><div>( M )</div></legend-key>
+									<legend-title
+										><div>Play <u>M</u>usic</div></legend-title
+									>
+									<legend-description
+										><div>
+											Plays or pauses an audio loop that really sets the mood.
+										</div></legend-description
+									>
+								</legend-entry>
+								<legend-entry>
+									<legend-icon style="--icon: 8" id="fullscreen"></legend-icon>
+									<legend-key><div>( F )</div></legend-key>
+									<legend-title
+										><div><u>F</u>ullscreen</div></legend-title
+									>
+									<legend-description
+										><div>
+											Expands the page to fill the entire screen.
+										</div></legend-description
+									>
+								</legend-entry>
+							</legend>
+						</section>
+						<section id="controls">
+							<h2>Flight Manual</h2>
+							<p>
+								<strong>On devices with a pointer :</strong> move the pointer to
+								change your heading, left&#8209;click and right&#8209;click (or
+								shift&#8209;click) to speed up and slow down, and hold the
+								spacebar to brake. You can also scroll through the credits the
+								way you scroll through an ordinary web page.
+							</p>
+							<p>Look at you, you're a natural.</p>
+							<p>
+								<strong>On devices with a touch screen:</strong> move one finger
+								around to change your heading, and hold another at the top,
+								bottom, or middle of the screen to speed up, slow down or brake.
+								Not bad, eh?
+							</p>
+							<p>
+								In the unlikely event of a water landing, you may find a
+								flotation simulation device under
+								<a
+									target="_blank"
+									href="https://usb.org/sites/default/files/hut1_4.pdf#section.5.7"
+									>Section 5.7</a
+								>
+								of the USB HID&nbsp;Usage&nbsp;Tables.
+							</p>
+						</section>
+						<section id="history">
+							<h2>How and why did someone hide this in Excel&nbsp;97?</h2>
+							<p>
+								Covertly, in their downtime, because some people are just fun.
+							</p>
+							<p>
+								Big programs took a very long time to compile, test and
+								stabilize back in the nineties. While they waited, Microsoft's
+								software developers pranked each other, learned to juggle, and
+								made their own games with the new tools at their disposal.
+							</p>
+							<p>
+								Some games got
+								<a
+									target="_blank"
+									href="https://en.wikipedia.org/wiki/List_of_games_included_with_Windows"
+									>bundled with Windows</a
+								>
+								or sold in
+								<a
+									target="_blank"
+									href="https://en.wikipedia.org/wiki/Microsoft_Entertainment_Pack"
+									>"Entertainment Packs"</a
+								>. Others stowed away in published software as easter&nbsp;eggs.
+							</p>
+							<p>
+								In my opinion, this specific easter&nbsp;egg was how someone
+								taught themselves to use
+								<a
+									target="_blank"
+									href="https://en.wikipedia.org/wiki/Graphics_Device_Interface"
+									>GDI</a
+								>
+								and
+								<a
+									target="_blank"
+									href="https://en.wikipedia.org/wiki/DirectDraw"
+									>DirectDraw</a
+								>
+								in a
+								<a
+									target="_blank"
+									href="https://en.wikipedia.org/wiki/Software_rendering#Real-time_software_rendering"
+									>real&#8209;time software renderer</a
+								>, and is an homage to Bullfrog Productions's game series
+								<a
+									target="_blank"
+									href="https://en.wikipedia.org/wiki/Magic_Carpet_(video_game)"
+									>Magic Carpet</a
+								>— taking direct inspiration from the
+								<a
+									target="_blank"
+									href="https://web.archive.org/web/20181129132248/https://www.gamestm.co.uk/features/behind-the-scenes-of-magic-carpet/"
+									>techniques</a
+								>
+								Glenn Corpes used to efficiently render 3D terrain and water.
+							</p>
+							<p>
+								It can be considered a followup to Excel&nbsp;95's
+								Doom&#8209;inspired easter&nbsp;egg,
+								<a
+									target="_blank"
+									href="https://archive.org/details/microsoft-office-95-hall-of-tortured-souls"
+									>"Hall&nbsp;of&nbsp;Tortured&nbsp;Souls"</a
+								>. The two have some minor things in common, though they're
+								rendered very differently.
+							</p>
+							<p>
+								Microsoft didn't mind any of this at the time, as long as the
+								easter&nbsp;eggs weren't directly linked to the main program.
+								That might've given the company some cover in case a
+								PR&nbsp;disaster struck. It also meant the authors had to work
+								out how to load and run the easter&nbsp;egg code without
+								referencing it— by overwriting a function pointer when certain
+								keys were held down at once, for instance.
+							</p>
+							<p>
+								Redmond's lenience wouldn't last. Its
+								<a
+									target="_blank"
+									href="http://web.archive.org/web/20020405060312/http://www.wired.com/news/business/0,1367,49826,00.html"
+									>"Trustworthy Computing Initiative"</a
+								>
+								in 2002 prescribed major changes to how its developers wrote
+								software, making a program's user productivity, stability and
+								security paramount— which in turn made easter&nbsp;eggs
+								unshippable.
+							</p>
+							<p>
+								Today, software easter&nbsp;eggs are almost unheard of outside
+								the game industry.
+							</p>
+						</section>
+						<section id="recovery">
+							<h2>How'd you turn it into a web site?</h2>
+							<p>I'm so glad you asked!</p>
+							<p>
+								To
+								<a
+									target="_blank"
+									href="https://en.wikipedia.org/wiki/Reverse_engineering"
+									>reverse&nbsp;engineer</a
+								>
+								the original program, its memory was recorded with
+								<a
+									target="_blank"
+									href="https://docs.microsoft.com/en-us/sysinternals/downloads/procdump"
+								>
+									ProcDump</a
+								>
+								as it ran on Windows&nbsp;XP in
+								<a target="_blank" href="https://www.virtualbox.org/"
+									>Virtual&nbsp;Box</a
+								>. Memory snapshots were inspected and compared with
+								<a target="_blank" href="https://hexfiend.com/">Hex Fiend</a>.
+								The credit&nbsp;text, terrain&nbsp;data, framebuffer and
+								textures were recovered this way. A custom Win32 program was
+								written to collect the color&nbsp;lookup&nbsp;table, which the
+								project uses in indexed&#8209;color mode. Larger
+								True&#8209;Color textures were custom made in Photoshop.
+							</p>
+							<p>
+								Several small details, like the key bindings and
+								text&nbsp;formatting, were found with a decompiler; others, such
+								as the dithering technique, were discovered by analyzing
+								framebuffers in Photoshop. Lastly, the framebuffers were fed
+								into <a target="_blank" href="https://fspy.io">fSpy</a> to
+								recover the camera properties and the player's starting position
+								and rotation.
+							</p>
+							<p>
+								A prototype was built in
+								<a target="_blank" href="https://threejs.org">Three.js</a>
+								before this more detailed port was made in
+								<a target="_blank" href="http://regl.party">regl</a>. The
+								controls, data&nbsp;parser, renderer and shaders were all custom
+								made and updated over time to recapture the original experience.
+							</p>
+						</section>
+						<section id="torus">
+							<h2>Torus Trap</h2>
+							<picture>
+								<div
+									id="heightmap"
+									class="square-diagram torus-hint hinted-image"
+									title="Repeating terrain"
+								></div>
+							</picture>
+							<p>
+								Notice the landscape
+								<span class="torus-hint hinted-text"
+									>repeats in every direction</span
+								>, so you can fly forever. In fact this whole world is "charted"
+								from a square "spreadsheet"
+								<em>only 64 cells wide.</em>
+							</p>
+							<p>So, how is it so easy to get lost?</p>
+							<p>
+								There are a few tricks to make small worlds feel big. Provide no
+								navigational instruments or vantage&nbsp;points; give the world
+								a uniform texture and few distinct landmarks; the short drawing
+								distance hides the terrain's repetition; and in fact, many of
+								its features loop around the edge of the world to join back with
+								themselves, so there's no visible seam.
+							</p>
+							<p>
+								Above all, the camera is tightly zoomed in, with a
+								<a
+									target="_blank"
+									href="https://en.wikipedia.org/wiki/Field_of_view"
+								>
+									field of view</a
+								>
+								of only <em>26&nbsp;degrees</em>. That's like piloting a plane
+								through a porthole the size of a dinner plate two feet in front
+								of your face. Of course you're lost. Relish it.
+							</p>
+						</section>
+						<section id="lighting">
+							<h2>Behind the Sheens</h2>
+							<p>
+								Rapid lighting and texturing are the enduring pillars of 3D
+								graphics cards, but in the nineties most Excel users and even
+								gamers didn't have those. Rendering was done in software, not
+								hardware, and making something look good and draw fast while
+								running on a Pentium was a real challenge.
+							</p>
+							<p>
+								A common way to light things quickly is to only do it once,
+								ahead of time. This is called "pre&#8209;computed" or "baked"
+								lighting, and while we bake data into special textures nowadays,
+								back then it was common to bake to <em>vertices</em>, which are
+								the points that define shapes.
+							</p>
+							<p>
+								The easter&nbsp;egg's terrain data is like a baked lasagna— the
+								<span class="elevation-hint hinted-text">elevation</span>,
+								<span class="brightness-hint hinted-text">lighting</span>, and
+								<span class="region-hint hinted-text">material</span>
+								of each point is baked into a corresponding 64x64 grid:
+							</p>
+							<picture>
+								<img
+									class="square-diagram elevation-hint hinted-image"
+									src="assets/terrain/elevation.bmp"
+									title="Terrain Elevation"
+								/>
+								<img
+									class="square-diagram brightness-hint hinted-image"
+									src="assets/terrain/brightness.bmp"
+									title="Terrain Lighting"
+								/>
+								<img
+									class="square-diagram region-hint hinted-image"
+									src="assets/terrain/region.bmp"
+									title="Terrain Material"
+								/>
+							</picture>
+							<p>
+								It's clear just by looking at them that the lighting data was
+								created from the elevation data, but it's not a realistic
+								lighting calculation. Instead, like an early form of
+								<a
+									target="_blank"
+									href="https://en.wikipedia.org/wiki/Ambient_occlusion"
+									>ambient occlusion</a
+								>, the pointy areas were made darker than the smooth ones, which
+								is <em>also</em> like a baked lasagna.
+							</p>
+						</section>
+						<section id="stripes">
+							<h2>Earning Their Stripes</h2>
+							<picture>
+								<img
+									id="palette"
+									class="square-diagram clut-hint hinted-image"
+									src="assets/ui/palette.png"
+									title="Color Lookup Table (or CLUT)"
+								/>
+							</picture>
+							<p>
+								By default, this simulator draws with only the original 256
+								colors, which took some effort. It has to load the
+								<span class="clut-hint hinted-text"
+									>color&nbsp;lookup&nbsp;table</span
+								>
+								and indexed&#8209;color textures into video&nbsp;memory, and its
+								shaders map texel values to colors in the table, like a
+								<a target="_blank" href="https://en.wikipedia.org/wiki/RAMDAC"
+									>RAMDAC</a
+								> on an old video card.
+							</p>
+							<p>
+								That table holds sixteen shades of sixteen colors, so most
+								pixels get mapped to the same shade as their neighbors, causing
+								a visual artifact known as
+								<a
+									target="_blank"
+									href="https://en.wikipedia.org/wiki/Colour_banding"
+									>banding</a
+								>. A technique called
+								<a target="_blank" href="https://en.wikipedia.org/wiki/Dither"
+									>dithering</a
+								>
+								can hide banding by adjusting pixel values with random noise or
+								high frequency patterns.
+							</p>
+							<picture>
+								<img
+									id="scanlines-animated"
+									class="square-diagram scanlines-animated-hint hinted-image"
+									src="assets/ui/scanlines-animated.gif"
+									title="Animation of the impact of skewed dithering on the terrain shading"
+								/>
+							</picture>
+							<p>
+								The original easter&nbsp;egg draws terrain one triangle at a
+								time, using
+								<a
+									target="_blank"
+									href="https://en.wikipedia.org/wiki/Scanline_rendering"
+									>scanline rendering</a
+								>. A scanline is a row of pixels drawn left to right. Each
+								pixel's final color and texture depends on its distance from the
+								scanline edges. This code is where the authors chose to add
+								<a
+									target="_blank"
+									href="index.html?o=crs&interactive=false&l=poolside&demo=shading"
+									>very simple dithering</a
+								>. That
+								<span class="scanlines-animated-hint hinted-text"
+									>skews the dither pattern</span
+								>
+								along the triangle edges which causes long vertical streaks, but
+								it inexpensively doubles the range of the terrain shading from
+								sixteen to thirty&#8209;two.
+							</p>
+							<p>
+								Graphics hardware doesn't render using scanlines, but this
+								project simulates them. Its vertex&nbsp;shader maps each
+								triangle's left edges to a skewed space, and the
+								fragment&nbsp;shader offsets the dither of each pixel by the
+								<a
+									target="_blank"
+									href="index.html?o=c&interactive=false&l=poolside&demo=scanlines"
+									>distance along its scanline</a
+								>. The result is subtle, but accurate.
+							</p>
+						</section>
+						<section id="acknowledgements">
+							<h2>Acknowledgements</h2>
+							<p>
+								Thank you
+								<a target="_blank" href="https://edfries.wordpress.com/"
+									>Ed Fries</a
+								>
+								for
+								<a target="_blank" href="research/ed_fries_1_27_22.html"
+									>providing insight</a
+								>
+								into the culture at early Microsoft, and
+								<a
+									target="_blank"
+									href="https://en.wikipedia.org/wiki/Hank_Chien"
+									>Hank Chien</a
+								>
+								for describing the charting team and pointing me in the right
+								direction.
+							</p>
+							<p>
+								<a target="_blank" href="https://hexfiend.com/">Peter Ammon</a
+								>'s Hex Fiend was (and is) indispensable, as was (and is)
+								<a target="_blank" href="https://www.retrodev.com/"
+									>Mike Pavone's</a
+								>
+								reverse&nbsp;engineering expertise, computer history familiarity
+								and general camaraderie.
+							</p>
+							<p>
+								Do you like the music? It's kindly loaned from an SGI demo called "Lumbus", written in 1995 by
+								<a
+									target="_blank"
+									href="https://nitter.net/illusionmanage1"
+								>Frans van Hoesel</a
+								>,
+								who later headed the
+								<a
+									target="_blank"
+									href="https://www.rug.nl/society-business/centre-for-information-technology/research/hpcv"
+								>Reality Center</a
+								>
+								at the University of Groningen.
+							</p>
+							<p>
+								<a target="_blank" href="https://thatjdanisso.cool/98-dot-css"
+									>Jordan Scales</a
+								>
+								provided the excellent CSS and web font basis for this about
+								page.
+								<a target="_blank" href="https://www.deadstaticdrive.com/"
+									>Mike Blackney</a
+								>
+								demonstrated a technique for
+								<a target="_blank" href="research/sdfs_in_photoshop.html"
+									>generating SDFs in Photoshop</a
+								>, which saved me time and money.
+							</p>
+							<p>
+								Thank you
+								<a target="_blank" href="https://bohemianalibi.com/"
+									>Tyler Lyn</a
+								>
+								for your continued love and support. 🥰
+							</p>
+						</section>
+						<p id="jump-to-top" class="standalone">
+							<a href="#top">Jump to top of page</a>
+						</p>
+						<footer class="field-row">
+							<button
+								class="ok standalone"
+								onclick="parent.document.querySelector('iframe#about-box').classList.add('hidden')"
+							>
+								OK
+							</button>
+						</footer>
+					</article>
+				</main>
+			</div>
+		</div>
+		<script type="module">
+			const portrait = document.querySelector("#self-portrait");
+			let isBoppin = false;
+
+			window.addEventListener('message', (event) => {
+				const settings = event.data;
+				if (settings == null || settings.id !== "excel_97_egg_settings") return;
+
+				if (isBoppin != settings.music) {
+					isBoppin = settings.music;
+					portrait.classList.toggle("boppin", isBoppin);
+				}
+			});
+		</script>
+	</body>
+</html>

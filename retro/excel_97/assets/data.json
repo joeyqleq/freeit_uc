@@ -1,0 +1,169 @@
+{
+	"controls": {
+		"birdsEye": {
+			"drop": -80,
+			"scale": 0.03,
+			"tilt": -65
+		},
+		"mouse": {
+			"sensitivity": [0.125, -0.025],
+			"rollMultiplier": 0.2,
+			"minPitch": -9,
+			"maxPitch": 9,
+			"scrollSpeed": 0.005
+		},
+		"touch": {
+			"sensitivity": [-60, -60],
+			"minPitch": -9,
+			"maxPitch": 18
+		},
+		"forwardSensitivity": 400,
+		"maxForwardSpeed": 1000,
+		"minHeightOffGround": 3,
+		"maxAltitude": 105,
+		"locations": {
+			"spawn": {
+				"position": [-7, 39, 40],
+				"rotation": [0, 235.4]
+			},
+			"credits": {
+				"position": [480.5, 1800, 45],
+				"rotation": [5, 180]
+			},
+			"poolside": {
+				"position": [300, 595, 85],
+				"rotation": [10, 315]
+			},
+			"spikes": {
+				"position": [336, 1276, 85],
+				"rotation": [6.5, 225]
+			}
+		}
+	},
+	"rendering": {
+		"fogNear": 500,
+		"fogFar": 750,
+		"fov": 26,
+		"maxDrawDistance": 640,
+		"quadBorder": 0.005,
+		"resolution": [640, 480],
+		"targetFPS": 15,
+		"dunesTextureDistort": [0.98828125, 1],
+		"titleCreditColor": 13,
+		"bodyCreditColor": 15,
+		"supported_demos": ["shading", "scanlines", "sphere", "audioviz"],
+		"texture_packs": {
+			"indexed_color": {
+				"anisotropicLevels": 0,
+				"textures": {
+					"horizonTexture": {
+						"url": "assets/textures/horizon.bmp",
+						"type": "indexed_color"
+					},
+					"dunesTexture": {
+						"url": "assets/textures/dunes.bmp",
+						"type": "indexed_color"
+					},
+					"cairnTexture": {
+						"url": "assets/textures/cairn.bmp",
+						"type": "indexed_color"
+					},
+					"creditsTexture": {
+						"url": "assets/textures/credits_wrapped.bmp",
+						"type": "indexed_color"
+					},
+					"cursedCreditsTexture": {
+						"url": "assets/textures/cursed_credits_wrapped.bmp",
+						"type": "indexed_color"
+					}
+				}
+			},
+			"true_color": {
+				"anisotropicLevels": 12,
+				"textures": {
+					"horizonTexture": {
+						"url": "assets/textures/hi_res/horizon_hi_res.png",
+						"type": "mipmapped_true_color"
+					},
+					"dunesTexture": {
+						"url": "assets/textures/hi_res/dunes_hi_res.png",
+						"type": "mipmapped_true_color"
+					},
+					"cairnTexture": {
+						"url": "assets/textures/hi_res/cairn_hi_res.png",
+						"type": "mipmapped_true_color"
+					},
+					"creditsTexture": {
+						"url": "assets/textures/hi_res/credits_sdf_wrapped.png",
+						"type": "sdf"
+					}
+				}
+			}
+		},
+		"color_table": "assets/textures/palette.bmp"
+	},
+	"terrain": {
+		"size": 2050,
+		"brightnessMult": -0.025,
+		"brightnessAdd": 0.87,
+		"maps": {
+			"elevation": { "url": "assets/terrain/elevation.bmp", "offset": -128 },
+			"brightness": { "url": "assets/terrain/brightness.bmp", "offset": -128 },
+			"region": { "url": "assets/terrain/region.bmp", "offset": 0 }
+		},
+		"regions": [
+			{ "id": "dunes", "texture": 0 },
+			{ "id": "pool", "texture": 0, "waveAmplitude": 0.125 },
+			{ "id": "cairn", "texture": 1 },
+			{
+				"id": "creditsTL",
+				"texture": 2,
+				"scale": [0.5, 0.5],
+				"offset": [1, 1]
+			},
+			{
+				"id": "creditsTR",
+				"texture": 2,
+				"scale": [0.5, 0.5],
+				"offset": [0, 1]
+			},
+			{
+				"id": "creditsBL",
+				"texture": 2,
+				"scale": [0.5, 0.5],
+				"offset": [1, 0]
+			},
+			{
+				"id": "creditsBR",
+				"texture": 2,
+				"scale": [0.5, 0.5],
+				"offset": [0, 0]
+			}
+		]
+	},
+	"cursed": {
+		"resolution": [640, 480],
+		"prefix": [
+			"data:image/bmp;base64,",
+			"Qk04tAQAAAAAADgEAAAoAAAAgAIAAOABAAABAAgAAAAAAAKwBAASCwAAEgsAAAAAAAAAAAAAAAAAAA4AAQAaAAQAJAAJACwAEAAyABkANgAkADgAMQA4AEAA",
+			"NgBRADIAZAAsC3kAJDyQABpbqQAOfsQAAEtwAAAAAAANAggAGgQRACcGGgA0CCMAQQorAE4MNABbDj0AaRFGAHYTTgCDFVcAkBdgAJ0ZaQCqG3EAtx16AMQf",
+			"gwAAAAAADAEGABkDDAAlBRIAMgcZAD4JHwBLCyUAVw0rAGQPMgBwEDgAfRI+AIkURACWFksAohhRAK8aVwC7HF0AAAAAAAsBBQAXAwoAIwQPAC8GFAA7CBkA",
+			"RwkeAFMLIwBfDSgAag4tAHYQMgCCETcAjhM8AJoVQQCmFkYAshhLAAAAAAALAQQAFgIIACEEDQAtBREAOAYVAEMIGgBOCR4AWgsjAGUMJwBwDSsAew8wAIcQ",
+			"NACSETgAnRM9AKgUQQAAAAAACgEEABUCCAAfAwwAKgQQADUFFAA/BhgASgccAFUJIABfCiQAagsoAHQMLAB/DTAAig40AJQPOACfEDwAAAAAAAoAAwAUAQcA",
+			"HgILACgDDwAyBBMAPAUXAEYGGwBQBx8AWgciAGQIJgBuCSoAeAouAIILMgCMDDYAlg06AAAAAAAJAAMAEgEHABwBCwAlAg8ALgMTADgDFgBBBBoASwUeAFQF",
+			"IgBdBiYAZwYpAHAHLQB5CDEAgwg1AIwJOQAAAAAACAADABEABwAaAQsAIwEPACsBEgA0AhYAPQIaAEYDHgBOAyEAVwMlAGAEKQBpBC0AcQQwAHoFNACDBTgA",
+			"AAAAAAgAAwAQAAcAGAALACAADgAoABIAMAAWADgAGQBBAR0ASQEhAFEBJABZASgAYQEsAGkBLwBxATMAeQE3AAAAAAAICAgAERERABoaGgAjIyMAKysrADQ0",
+			"NAA9PT0ARkZGAE5OTgBXV1cAYGBgAGlpaQBxcXEAenp6AIODgwAAAAAABQUFAAsLCwAQEBAAFhYWABwcHAAhISEAJycnAC0tLQAyMjIAODg4AD09PQBDQ0MA",
+			"SUlJAE5OTgBUVFQAAAAAAAYGBgAMDAwAEhISABkZGQAfHx8AJSUlACsrKwAyMjIAODg4AD4+PgBEREQAS0tLAFFRUQBXV1cAXV1dABAIEAAeECAALBgwADAo",
+			"QAA0OlAAOExgADxecABAZIAARGqQAEhwoABCeLAAPILAADKM0AAoiOAAHoTwABSA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8PDwAfHx8ALy8vAD8/PwBPT08AX19fAG9vbwB/f38Aj4+PAJ+fnwCvr68Av7+/AM/PzwDf398A////AAAA"
+		],
+		"suffix": ["AAA="],
+		"base64Table": [
+			65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82,
+			83, 84, 85, 86, 87, 88, 89, 90, 97, 98, 99, 100, 101, 102, 103, 104, 105,
+			106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+			121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 43, 47
+		]
+	}
+}
