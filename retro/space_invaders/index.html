@@ -6,26 +6,32 @@
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" href="Styles/main.css">
     <link rel="icon" href="http://www.unixstickers.com/image/cache/data/stickers/spaceinvaders/Space-medium-invader.sh-600x600.png">
-  <!-- Matomo -->
+  
+
+  
+
+
+<!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-  _paq.push(["setCookieDomain", "*.joeyq.tech"]);
+  _paq.push(["setCookieDomain", "*.savedbywaas.tech"]);
+  _paq.push(["setDomains", ["*.savedbywaas.tech","*.www.savedbywaas.tech","*.savedbywaas.tech","*.www.savedbywaas.tech"]]);
+  _paq.push(["enableCrossDomainLinking"]);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
-    var u="//matomo.joeyq.tech/";
+    var u="https://matomo.joeyq.tech/";
     _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '1']);
+    _paq.push(['setSiteId', '6']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="//matomo.joeyq.tech/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="https://matomo.joeyq.tech/matomo.php?idsite=6&amp;rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Matomo Code -->
-
-  </head>
+</head>
   <body>
     <canvas id="background-canvas"></canvas>
     <canvas id="game-canvas" width="700" height="600"></canvas>
